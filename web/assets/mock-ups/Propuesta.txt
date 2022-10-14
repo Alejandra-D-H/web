@@ -1,0 +1,3 @@
+La pagina va a consistir en un blog personal interactivo, en este se verá cierta instrospección en la forma en como encuentro el arte. 
+1- En el inicio, se podra escoger entre las diferentes publicaciones y poder descubrir algo acerca de esta o el autor, de ahí se procede a el blog.
+2- En la parte de blog, se podra reproducir un audio el cual representara mi sentimiento/vista hacia la obra/performance de la que se este hablando y al final de este se pondra una encuesta donde se preguntará si se esta de acuerdo o se añadiran sugerencias (encuestas tipo facebook).
