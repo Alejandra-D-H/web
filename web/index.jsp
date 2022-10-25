@@ -4,11 +4,11 @@
     Author     : usuario
 --%>
 
+
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -19,7 +19,7 @@
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,16 +52,15 @@
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i><</a>
       </div>
-    </div>
   </section>
   <!-- End Top Bar -->
 
   <header id="header" class="header d-flex align-items-center">
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+        <a href="index.jsp" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>La<span>Galería</span></h1>
@@ -69,7 +68,8 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="#hero">Inicio</a></li>
-          <li><a href="blog.html">Posts</a></li>
+          <li><a href="blog.jsp">Posts</a></li>
+          <li><a href="post.jsp">Agregar</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -81,7 +81,7 @@
   <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero">
+  <section id="hero" class="hero" style="background-image: url('assets/img/background.jpg')">
     <div class="container position-relative">
       <div class="row gy-5" data-aos="fade-in">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
@@ -89,7 +89,7 @@
 
           </span></h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="blog.html" class="btn-get-started">O no</a>
+              <a href="blog.jsp" class="btn-get-started">O no</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2">
@@ -137,8 +137,6 @@
         </div>
       </div>
     </div>
-
-    </div>
   </section>
   <!-- End Hero Section -->
 
@@ -164,7 +162,7 @@
               <p class="post-category">Politics</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
+                  <a href="blog-details.jsp">Dolorum optio tempore voluptas dignissimos</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -190,7 +188,7 @@
               <p class="post-category">Sports</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
+                  <a href="blog-details.jsp">Nisi magni odit consequatur autem nulla dolorem</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -216,7 +214,7 @@
               <p class="post-category">Entertainment</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                  <a href="blog-details.jsp">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -243,7 +241,7 @@
       <div class="container text-center" data-aos="zoom-out">
         <a href="https://www.youtube.com/watch?v=O6dF8Gjm-X8&ab_channel=canzoniutili" class="glightbox play-btn"></a>
         <h3>Del dia</h3>
-        <a class="cta-btn" href="blog.html">Mas...</a>
+        <a class="cta-btn" href="blog.jsp">Mas...</a>
       </div>
     </section><!-- End Call To Action Section -->
 
@@ -288,5 +286,4 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>

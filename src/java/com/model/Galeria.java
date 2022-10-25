@@ -4,6 +4,10 @@
  */
 package com.model;
 
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -35,6 +39,12 @@ public class Galeria implements Serializable{
     private String autor;
     @Column
     private String titulo;
+    /*
+    @Lob
+    private byte[] image;  
+    */
+    
+    
 
     public Galeria(int galeriaId, String descripcion, String autor, String titulo) {
         this.galeriaId = galeriaId;
@@ -77,4 +87,5 @@ public class Galeria implements Serializable{
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
+
 }

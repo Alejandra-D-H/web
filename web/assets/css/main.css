@@ -165,7 +165,7 @@ section {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background: var(--color-secondary);
+  background: var(--color-default);
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -2017,4 +2017,5 @@ section {
 
 .footer .credits a {
   color: #fff;
+  
 }
