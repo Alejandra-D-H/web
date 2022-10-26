@@ -69,7 +69,6 @@
         <ul>
           <li><a href="#hero">Inicio</a></li>
           <li><a href="blog.jsp">Posts</a></li>
-          <li><a href="post.jsp">Agregar</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -98,45 +97,7 @@
       </div>
     </div>
 
-    <div class="icon-boxes position-relative">
-      <div class="container position-relative">
-        <div class="row gy-4 mt-5">
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-easel"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-            </div>
-          </div>
-          <!--End Icon Box -->
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-gem"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Sed ut perspiciatis</a></h4>
-            </div>
-          </div>
-          <!--End Icon Box -->
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-geo-alt"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Magni Dolores</a></h4>
-            </div>
-          </div>
-          <!--End Icon Box -->
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-command"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Nemo Enim</a></h4>
-            </div>
-          </div>
-          <!--End Icon Box -->
-
-        </div>
-      </div>
-    </div>
+   
   </section>
   <!-- End Hero Section -->
 
@@ -237,8 +198,8 @@
 
 
     <!-- ======= Call To Action Section ======= -->
-    <section id="call-to-action" class="call-to-action">
-      <div class="container text-center" data-aos="zoom-out">
+    <section id="call-to-action" class="call-to-action" style="background-image: url('assets/img/background.jpg')">
+      <div class="container text-center" data-aos="zoom-out" style="background-image: url('https://picsum.photos/990/730/?blur')">
         <a href="https://www.youtube.com/watch?v=O6dF8Gjm-X8&ab_channel=canzoniutili" class="glightbox play-btn"></a>
         <h3>Del dia</h3>
         <a class="cta-btn" href="blog.jsp">Mas...</a>

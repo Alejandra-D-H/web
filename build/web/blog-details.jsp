@@ -170,10 +170,6 @@
 
 
                             </article>
-                            <!-- ENCUESTA -->
-
-
-
 
                             <!-- End blog post -->
 
@@ -196,227 +192,129 @@
                             <!-- COMMENTS-->
                             <div class="comments">
 
-                                <h4 class="comments-count">8 Comments</h4>
+                                <!-- Comment Form -->
+                                <div class="reply-form">
 
-                                <div id="comment-1" class="comment">
-                                    <div class="d-flex">
-                                        <div class="comment-img"><img src="assets/img/blog/comments-1.jpg" alt=""></div>
-                                        <div>
-                                            <h5><a href="">Georgia Reader</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
-                                            <time datetime="2020-01-01">01 Jan,2022</time>
-                                            <p>
-                                                Et rerum totam nisi. Molestiae vel quam dolorum vel voluptatem et et. Est ad aut sapiente quis molestiae est qui cum soluta.
-                                                Vero aut rerum vel. Rerum quos laboriosam placeat ex qui. Sint qui facilis et.
-                                            </p>
+                                    <h4> ¿Tienes un comentario?</h4>
+                                    <p> </p>
+                                    <form action="./GaleriaServlet" method="POST">
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <input name="galeriaId" value="${galeria.galeriaId}" type="text" class="form-control" placeholder="Id*">
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" name="autor" value="${galeria.autor}" class="form-control" placeholder="Autor">
+                                            </div>
                                         </div>
-                                    </div>
-                                </div><!-- End comment #1 -->
-
-                                <div id="comment-2" class="comment">
-                                    <div class="d-flex">
-                                        <div class="comment-img"><img src="assets/img/blog/comments-2.jpg" alt=""></div>
-                                        <div>
-                                            <h5><a href="">Aron Alvarado</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
-                                            <time datetime="2020-01-01">01 Jan,2022</time>
-                                            <p>
-                                                Ipsam tempora sequi voluptatem quis sapiente non. Autem itaque eveniet saepe. Officiis illo ut beatae.
-                                            </p>
+                                        <div class="row">
+                                            <div class="col form-group">
+                                                <input type="text" name="titulo" value="${galeria.titulo}" class="form-control" placeholder="Titulo">
+                                            </div>
                                         </div>
-                                    </div>
+                                        <div class="row">
+                                            <div class="col form-group">
+                                                <input type="text" name="descripcion" class="form-control" placeholder="Your Comment*" value="${galeria.descripcion}">
+                                            </div>
+                                        </div>
 
-                                    <div id="comment-reply-1" class="comment comment-reply">
+
+                                        <div class="col-md-8 form-group">
+                                            <input type="submit" name="action" value="Add" class="btn btn-primary"/>
+                                            <input type="submit" name="action" value="Edit" class="btn btn-primary"/>
+                                            <input type="submit" name="action" value="Delete" class="btn btn-primary"/>
+                                            <input type="submit" name="action" value="Search" class="btn btn-primary"/>
+                                        </div>
+
+                                    </form>
+                                </div>
+
+                                <div class="comments">
+                                    <h4 class="comments-count">Comments</h4>
+
+                                    <div id="comment-1" class="comment">
                                         <div class="d-flex">
-                                            <div class="comment-img"><img src="assets/img/blog/comments-3.jpg" alt=""></div>
+                                            <div class="comment-img"><img src="assets/img/blog/comments-1.jpg" alt=""></div>
                                             <div>
-                                                <h5><a href="">Lynda Small</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                                                <h5><a href="">Georgia Reader</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
                                                 <time datetime="2020-01-01">01 Jan,2022</time>
                                                 <p>
-                                                    Enim ipsa eum fugiat fuga repellat. Commodi quo quo dicta. Est ullam aspernatur ut vitae quia mollitia id non. Qui ad quas nostrum rerum sed necessitatibus aut est. Eum officiis sed repellat maxime vero nisi natus. Amet nesciunt nesciunt qui illum omnis est et dolor recusandae.
+                                                    Et rerum totam nisi. Molestiae vel quam dolorum vel voluptatem et et. Est ad aut sapiente quis molestiae est qui cum soluta.
+                                                    Vero aut rerum vel. Rerum quos laboriosam placeat ex qui. Sint qui facilis et.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div><!-- End comment #1 -->
 
-                                                    Recusandae sit ad aut impedit et. Ipsa labore dolor impedit et natus in porro aut. Magnam qui cum. Illo similique occaecati nihil modi eligendi. Pariatur distinctio labore omnis incidunt et illum. Expedita et dignissimos distinctio laborum minima fugiat.
-
-                                                    Libero corporis qui. Nam illo odio beatae enim ducimus. Harum reiciendis error dolorum non autem quisquam vero rerum neque.
+                                    <div id="comment-2" class="comment">
+                                        <div class="d-flex">
+                                            <div class="comment-img"><img src="assets/img/blog/comments-2.jpg" alt=""></div>
+                                            <div>
+                                                <h5><a href="">Aron Alvarado</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                                                <time datetime="2020-01-01">01 Jan,2022</time>
+                                                <p>
+                                                    Ipsam tempora sequi voluptatem quis sapiente non. Autem itaque eveniet saepe. Officiis illo ut beatae.
                                                 </p>
                                             </div>
                                         </div>
 
-                                        <div id="comment-reply-2" class="comment comment-reply">
+                                        <div id="comment-reply-1" class="comment comment-reply">
                                             <div class="d-flex">
-                                                <div class="comment-img"><img src="assets/img/blog/comments-4.jpg" alt=""></div>
+                                                <div class="comment-img"><img src="assets/img/blog/comments-3.jpg" alt=""></div>
                                                 <div>
-                                                    <h5><a href="">Sianna Ramsay</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                                                    <h5><a href="">Lynda Small</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
                                                     <time datetime="2020-01-01">01 Jan,2022</time>
                                                     <p>
-                                                        Et dignissimos impedit nulla et quo distinctio ex nemo. Omnis quia dolores cupiditate et. Ut unde qui eligendi sapiente omnis ullam. Placeat porro est commodi est officiis voluptas repellat quisquam possimus. Perferendis id consectetur necessitatibus.
+                                                        Enim ipsa eum fugiat fuga repellat. Commodi quo quo dicta. Est ullam aspernatur ut vitae quia mollitia id non. Qui ad quas nostrum rerum sed necessitatibus aut est. Eum officiis sed repellat maxime vero nisi natus. Amet nesciunt nesciunt qui illum omnis est et dolor recusandae.
+
+                                                        Recusandae sit ad aut impedit et. Ipsa labore dolor impedit et natus in porro aut. Magnam qui cum. Illo similique occaecati nihil modi eligendi. Pariatur distinctio labore omnis incidunt et illum. Expedita et dignissimos distinctio laborum minima fugiat.
+
+                                                        Libero corporis qui. Nam illo odio beatae enim ducimus. Harum reiciendis error dolorum non autem quisquam vero rerum neque.
                                                     </p>
                                                 </div>
                                             </div>
 
-                                        </div><!-- End comment reply #2-->
+                                            <div id="comment-reply-2" class="comment comment-reply">
+                                                <div class="d-flex">
+                                                    <div class="comment-img"><img src="assets/img/blog/comments-4.jpg" alt=""></div>
+                                                    <div>
+                                                        <h5><a href="">Sianna Ramsay</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                                                        <time datetime="2020-01-01">01 Jan,2022</time>
+                                                        <p>
+                                                            Et dignissimos impedit nulla et quo distinctio ex nemo. Omnis quia dolores cupiditate et. Ut unde qui eligendi sapiente omnis ullam. Placeat porro est commodi est officiis voluptas repellat quisquam possimus. Perferendis id consectetur necessitatibus.
+                                                        </p>
+                                                    </div>
+                                                </div>
 
-                                    </div><!-- End comment reply #1-->
+                                            </div><!-- End comment reply #2-->
 
-                                </div><!-- End comment #2-->
+                                        </div><!-- End comment reply #1-->
 
-                                
-                                <c:forEach items="${allGaleria}" var="gal">
-                                    <div id="comment-3" class="comment">
-                                        <div class="d-flex">
-                                           <div class="comment-img"><img src="http://placeimg.com/200/200/people" alt=""></div>
-                                            <div>
-                                                <h5><a href="">${gal.titulo}</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
-                                                <time datetime="2020-01-01">01 Jan,2022</time>
-                                                <p>
-                                                    ${gal.descripcion}
-                                                </p>
+                                    </div><!-- End comment #2-->
+
+                                    <!-- Mostrar comentarios -->  
+                                    <c:forEach items="${allGaleria}" var="gal">
+                                        <div id="comment-3" class="comment">
+                                            <div class="d-flex">
+                                                <div class="comment-img"><img src="https://secure.gravatar.com/avatar/39a37bdbfae7d8f87b5239e9da6c7bc2?s=256&d=mm&r=g" alt=""></div>
+                                                <div>
+                                                    <h5><a href="">${gal.titulo}</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                                                    <time datetime="2020-01-01">${gal.autor}</time>
+                                                    <p>
+                                                        ${gal.descripcion}
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </c:forEach>
+                                    </c:forEach>
+                                    
+                                    <!-- Fin mostrar comentarios -->
 
-                            </div><!-- End comment #3 -->
-
-                            <!-- Comment Form -->
-                            <div class="reply-form">
-
-                                <h4> ¿Tienes un comentario?</h4>
-                                <p> </p>
-                                <form action="./GaleriaServlet" method="POST">
-                                    <table>
-                                        <tr>
-                                            <th> Id </th>
-                                            <th><input type="text" name="galeriaId" value="${galeria.galeriaId}"></th>
-                                        </tr>
-                                        <tr>
-                                            <th> Descripción </th>
-                                            <th><input type="text" name="descripcion" value="${galeria.descripcion}"></th>
-                                        </tr>
-                                        <tr>
-                                            <th> Autor </th>
-                                            <th><input type="text" name="autor" value="${galeria.autor}"></th>
-                                        </tr>
-                                        <tr>
-                                            <th> Titulo </th>
-                                            <th><input type="text" name="titulo" value="${galeria.titulo}"></th>
-                                        </tr>
-
-                                        <tr>
-                                            <!-- PARA CARGAR IMAGEN
-                                            <th> Image </th>
-                                            <th><input type="file" name="image" >
-                                                <%--c:if test="${galeria.image ne null}">      
-                                            <img src="<%=request.getContextPath()%>/MostrarFotoServlet?id=${galeria.galeriaId}" style="width: 100px;"/>
-                                        </c:if--%>
-                                            </th>
-                                        </tr>
-                                             FIN CARGAR IMAGEN -->
-                                        <tr>
-                                            <td colspan="2">
-                                                <input type="submit" name="action" value="Add"/>
-                                                <input type="submit" name="action" value="Edit"/>
-                                                <input type="submit" name="action" value="Delete"/>
-                                                <input type="submit" name="action" value="Search"/>
-                                            <td>
-                                        </tr>
-                                    </table>
-                                </form>
-
-                            </div>
-
-                            <!-- End blog comments -->
+                                </div><!-- End comment #3 -->
 
 
-                            <div class="col-lg-4">
+                                <!-- End blog comments -->
 
-                                <div class="sidebar">
 
-                                    <div class="sidebar-item search-form">
-                                        <h3 class="sidebar-title">Search</h3>
-                                        <form action="" class="mt-3">
-                                            <input type="text">
-                                            <button type="submit"><i class="bi bi-search"></i></button>
-                                        </form>
-                                    </div><!-- End sidebar search formn-->
-
-                                    <div class="sidebar-item categories">
-                                        <h3 class="sidebar-title">Categories</h3>
-                                        <ul class="mt-3">
-                                            <li><a href="#">General <span>(25)</span></a></li>
-                                            <li><a href="#">Lifestyle <span>(12)</span></a></li>
-                                            <li><a href="#">Travel <span>(5)</span></a></li>
-                                            <li><a href="#">Design <span>(22)</span></a></li>
-                                            <li><a href="#">Creative <span>(8)</span></a></li>
-                                            <li><a href="#">Educaion <span>(14)</span></a></li>
-                                        </ul>
-                                    </div><!-- End sidebar categories-->
-
-                                    <div class="sidebar-item recent-posts">
-                                        <h3 class="sidebar-title">Recent Posts</h3>
-
-                                        <div class="mt-3">
-
-                                            <div class="post-item mt-3">
-                                                <img src="assets/img/blog/blog-recent-1.jpg" alt="">
-                                                <div>
-                                                    <h4><a href="blog-details.jsp">Nihil blanditiis at in nihil autem</a></h4>
-                                                    <time datetime="2020-01-01">Jan 1, 2020</time>
-                                                </div>
-                                            </div><!-- End recent post item-->
-
-                                            <div class="post-item">
-                                                <img src="assets/img/blog/blog-recent-2.jpg" alt="">
-                                                <div>
-                                                    <h4><a href="blog-details.jsp">Quidem autem et impedit</a></h4>
-                                                    <time datetime="2020-01-01">Jan 1, 2020</time>
-                                                </div>
-                                            </div><!-- End recent post item-->
-
-                                            <div class="post-item">
-                                                <img src="assets/img/blog/blog-recent-3.jpg" alt="">
-                                                <div>
-                                                    <h4><a href="blog-details.jsp">Id quia et et ut maxime similique occaecati ut</a></h4>
-                                                    <time datetime="2020-01-01">Jan 1, 2020</time>
-                                                </div>
-                                            </div><!-- End recent post item-->
-
-                                            <div class="post-item">
-                                                <img src="assets/img/blog/blog-recent-4.jpg" alt="">
-                                                <div>
-                                                    <h4><a href="blog-details.jsp">Laborum corporis quo dara net para</a></h4>
-                                                    <time datetime="2020-01-01">Jan 1, 2020</time>
-                                                </div>
-                                            </div><!-- End recent post item-->
-
-                                            <div class="post-item">
-                                                <img src="assets/img/blog/blog-recent-5.jpg" alt="">
-                                                <div>
-                                                    <h4><a href="blog-details.jsp">Et dolores corrupti quae illo quod dolor</a></h4>
-                                                    <time datetime="2020-01-01">Jan 1, 2020</time>
-                                                </div>
-                                            </div><!-- End recent post item-->
-
-                                        </div>
-
-                                    </div><!-- End sidebar recent posts-->
-
-                                    <div class="sidebar-item tags">
-                                        <h3 class="sidebar-title">Tags</h3>
-                                        <ul class="mt-3">
-                                            <li><a href="#">App</a></li>
-                                            <li><a href="#">IT</a></li>
-                                            <li><a href="#">Business</a></li>
-                                            <li><a href="#">Mac</a></li>
-                                            <li><a href="#">Design</a></li>
-                                            <li><a href="#">Office</a></li>
-                                            <li><a href="#">Creative</a></li>
-                                            <li><a href="#">Studio</a></li>
-                                            <li><a href="#">Smart</a></li>
-                                            <li><a href="#">Tips</a></li>
-                                            <li><a href="#">Marketing</a></li>
-                                        </ul>
-                                    </div><!-- End sidebar tags-->
-
-                                </div><!-- End Blog Sidebar -->
 
                             </div>
                         </div>
@@ -429,61 +327,9 @@
         <!-- ======= Footer ======= -->
         <footer id="footer" class="footer">
 
-            <div class="container">
-                <div class="row gy-4">
-                    <div class="col-lg-5 col-md-12 footer-info">
-                        <a href="index.jsp" class="logo d-flex align-items-center">
-                            <span>Impact</span>
-                        </a>
-                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-                        <div class="social-links d-flex mt-4">
-                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-2 col-6 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Terms of service</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-2 col-6 footer-links">
-                        <h4>Our Services</h4>
-                        <ul>
-                            <li><a href="#">Web Design</a></li>
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">Product Management</a></li>
-                            <li><a href="#">Marketing</a></li>
-                            <li><a href="#">Graphic Design</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-                        <h4>Contact Us</h4>
-                        <p>
-                            A108 Adam Street <br>
-                            New York, NY 535022<br>
-                            United States <br><br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
-                        </p>
-
-                    </div>
-
-                </div>
-            </div>
-
             <div class="container mt-4">
                 <div class="copyright">
-                    &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+                    &copy; Copyright <strong><span>LaGaleria</span></strong>. All Rights Reserved
                 </div>
                 <div class="credits">
                     <!-- All the links in the footer should remain intact. -->

@@ -695,7 +695,7 @@ section {
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action .container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta-bg.jpg") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://placeimg.com/1000/990/arch') center center;
   background-size: cover;
   padding: 100px 60px;
   border-radius: 15px;
@@ -1897,7 +1897,7 @@ section {
   border-radius: 50px;
   padding: 14px 40px;
   border: 0;
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
 }
 
 .blog .comments .reply-form .btn-primary:hover {

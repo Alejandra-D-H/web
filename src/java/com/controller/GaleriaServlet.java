@@ -20,7 +20,6 @@ import javax.servlet.http.Part;
  *
  * @author usuario
  */
-
 public class GaleriaServlet extends HttpServlet {
 
     @EJB
@@ -47,7 +46,7 @@ public class GaleriaServlet extends HttpServlet {
         String descripcion = request.getParameter("descripcion");
         String autor = request.getParameter("autor");
         String titulo = request.getParameter("titulo");
-        
+
         /*
         Part foto = request.getPart("image");
 
@@ -59,7 +58,7 @@ public class GaleriaServlet extends HttpServlet {
         {        
             dis.readFully(img);
         }}
-        */
+         */
         Galeria galeria = new Galeria(galeriaId, descripcion, autor, titulo);
 
         if ("Add".equalsIgnoreCase(action)) {
@@ -75,7 +74,7 @@ public class GaleriaServlet extends HttpServlet {
         request.setAttribute("galeria", galeria);
         request.setAttribute("allGaleria", galeriaDAO.getAllGaleria());
         request.getRequestDispatcher("blog-details.jsp").forward(request, response);
-        // response.setContentType("text/html;charset=UTF-8");
+        response.setContentType("text/html;charset=UTF-8");
 
     }
 

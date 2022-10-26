@@ -236,6 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
+  
 
   /**
    * Porfolio isotope and filter
