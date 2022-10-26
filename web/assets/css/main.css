@@ -165,7 +165,7 @@ section {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background: var(--color-default);
+  background: var(--color-primary);
   width: 44px;
   height: 44px;
   border-radius: 50px;
