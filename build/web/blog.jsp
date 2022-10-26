@@ -60,15 +60,15 @@
   <header id="header" class="header d-flex align-items-center">
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+        <a href="index.jsp" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>La<span>Galeria</span></h1>
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="blog.html">Posts</a></li>
+            <li><a href="index.jsp">Inicio</a></li>
+            <li><a href="blog.jsp">Posts</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -83,7 +83,7 @@
 
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs">
-      <div class="page-header d-flex align-items-center" style="background-image: url('/assets/img/background.jpg');">
+      <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/background.jpg');">
         <div class="container position-relative">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
@@ -96,7 +96,7 @@
       <nav>
         <div class="container">
           <ol>
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.jsp">Inicio</a></li>
             <li>Blog</li>
           </ol>
         </div>
@@ -119,7 +119,7 @@
               <p class="post-category">Pintura</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
+                  <a href="blog-details.jsp">Dolorum optio tempore voluptas dignissimos</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -145,7 +145,7 @@
               <p class="post-category">Animación</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
+                  <a href="blog-details.jsp">Nisi magni odit consequatur autem nulla dolorem</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -171,7 +171,7 @@
               <p class="post-category">Performance</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                  <a href="blog-details.jsp">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -197,7 +197,7 @@
               <p class="post-category">Sports</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Non rem rerum nam cum quo minus olor distincti</a>
+                  <a href="blog-details.jsp">Non rem rerum nam cum quo minus olor distincti</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -223,7 +223,7 @@
               <p class="post-category">Pintura</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Accusamus quaerat aliquam qui debitis facilis consequatur</a>
+                  <a href="blog-details.jsp">Accusamus quaerat aliquam qui debitis facilis consequatur</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -249,7 +249,7 @@
               <p class="post-category">Entertainment</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Distinctio provident quibusdam numquam aperiam aut</a>
+                  <a href="blog-details.jsp">Distinctio provident quibusdam numquam aperiam aut</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -280,64 +280,12 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
+<!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
-
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-info">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span>Impact</span>
-          </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-          <div class="social-links d-flex mt-4">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>
-            A108 Adam Street <br>
-            New York, NY 535022<br>
-            United States <br><br>
-            <strong>Phone:</strong> +1 5589 55488 55<br>
-            <strong>Email:</strong> info@example.com<br>
-          </p>
-
-        </div>
-
-      </div>
-    </div>
 
     <div class="container mt-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>LaGaleria</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->

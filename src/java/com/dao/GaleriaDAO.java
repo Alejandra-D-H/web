@@ -5,6 +5,8 @@
 package com.dao;
 
 import com.model.Galeria;
+import java.sql.*;
+import java.util.ArrayList;
 import javax.ejb.Stateless;
 import java.util.List;
 import javax.persistence.EntityManager;
@@ -19,7 +21,7 @@ public class GaleriaDAO implements GaleriaDAOLocal {
 
     @PersistenceContext
     private EntityManager em;
-
+    
     // Add business logic below. (Right-click in editor and choose
     // "Insert Code > Add Business Method")
     @Override

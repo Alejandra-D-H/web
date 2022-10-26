@@ -6,13 +6,15 @@ package com.controller;
 
 import com.dao.GaleriaDAOLocal;
 import com.model.Galeria;
+import java.io.DataInputStream;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.Part;
 
 /**
  *
@@ -23,7 +25,6 @@ public class GaleriaServlet extends HttpServlet {
     @EJB
     private GaleriaDAOLocal galeriaDAO;
 
-    
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -35,7 +36,7 @@ public class GaleriaServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+
         String action = request.getParameter("action");
         String galeriaIdStr = request.getParameter("galeriaId");
         int galeriaId = 0;
@@ -44,8 +45,20 @@ public class GaleriaServlet extends HttpServlet {
         }
         String descripcion = request.getParameter("descripcion");
         String autor = request.getParameter("autor");
-        String  titulo= request.getParameter("titulo");
+        String titulo = request.getParameter("titulo");
 
+        /*
+        Part foto = request.getPart("image");
+
+        int fotoSize=(int)foto.getSize();//si no tiene tamaño, no hay foto
+        byte[] img =null ; //el buffer
+        if(fotoSize>0)
+        {    img =new byte[fotoSize];
+        try(DataInputStream dis=new DataInputStream(foto.getInputStream()))
+        {        
+            dis.readFully(img);
+        }}
+         */
         Galeria galeria = new Galeria(galeriaId, descripcion, autor, titulo);
 
         if ("Add".equalsIgnoreCase(action)) {
@@ -60,9 +73,9 @@ public class GaleriaServlet extends HttpServlet {
 
         request.setAttribute("galeria", galeria);
         request.setAttribute("allGaleria", galeriaDAO.getAllGaleria());
-        request.getRequestDispatcher("index.jsp").forward(request, response);
-       // response.setContentType("text/html;charset=UTF-8");
-     
+        request.getRequestDispatcher("blog-details.jsp").forward(request, response);
+        response.setContentType("text/html;charset=UTF-8");
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
