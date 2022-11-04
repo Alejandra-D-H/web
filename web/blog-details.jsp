@@ -200,10 +200,10 @@
                                     <form action="./GaleriaServlet" method="POST">
                                         <div class="row">
                                             <div class="col-md-6 form-group">
-                                                <input name="galeriaId" value="${galeria.galeriaId}" type="text" class="form-control" placeholder="Id*">
+                                                <input name="galeriaId" value="${galeria.galeriaId}" type="text" class="form-control" placeholder="Id*" required>
                                             </div>
                                             <div class="col-md-6 form-group">
-                                                <input type="text" name="autor" value="${galeria.autor}" class="form-control" placeholder="Autor">
+                                                <input type="text" name="autor" value="${galeria.autor}" class="form-control" placeholder="Nombre">
                                             </div>
                                         </div>
                                         <div class="row">
@@ -213,7 +213,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col form-group">
-                                                <input type="text" name="descripcion" class="form-control" placeholder="Your Comment*" value="${galeria.descripcion}">
+                                                <input type="text" name="descripcion" class="form-control" placeholder="Comentario*" value="${galeria.descripcion}" required>
                                             </div>
                                         </div>
 

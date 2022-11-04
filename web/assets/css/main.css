@@ -54,7 +54,20 @@ h5,
 h6 {
   font-family: var(--font-primary);
 }
+/*--------------------------------------------------------------
+# Input validator
+--------------------------------------------------------------*/
+input:invalid {
+  border: 2px dashed red;
+}
 
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
+
+input:valid {
+  border: 2px solid black;
+}
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
@@ -2017,5 +2030,6 @@ section {
 
 .footer .credits a {
   color: #fff;
+  
   
 }
